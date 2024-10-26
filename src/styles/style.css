@@ -1,9 +1,20 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url("../fonts/Steppe-Book.ttf");
+}
+
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url("../fonts/Steppe-ExtraBold.ttf");
 }
 
 body {
     background-color: #FFE2B0;
+    font-family: 'Steppe-Book', sans-serif;
 }
 
 .header {
@@ -16,6 +27,7 @@ h1 {
 }
 
 .nav-items {
+    font-family: 'Steppe-ExtraBold', 'sans-serif';
     list-style: none;
     text-align: center;
     gap: 100px;
@@ -30,34 +42,40 @@ li {
 .navigation-header-links {
     margin-bottom: 20px;
 }
+
 .section-about {
     height: 640px;
     position: relative;
     background: url(../images/01-Картинка-фона.jpg) center/cover no-repeat;
+    margin-bottom: 20px;
 }
-.section-about-block{
+
+.section-about-block {
     position: absolute;
-    left: 730px;
-    top: 349px;
+    left: 50%;
+    top: 54%;
     width: 420px;
     height: 190px;
-    background: linear-gradient(180deg,rgba(244,213,178,0.8) 0%,
-    rgba(234,156,65,0.8) 100%);
+    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%,
+    rgba(234, 156, 65, 0.8) 100%);
     padding-top: 15px;
 }
 
-.section-about-block-border{
+.section-about-block-border {
     width: 390px;
     height: 160px;
-    border: 1px solid #000000 ;
+    border: 1px solid #000000;
     margin: 0 auto;
     padding: 17px 0 0 28px;
 }
-.section-about-block-title-text{
-    font-size: 36px;
+
+.section-about-block-title-text {
+    font-family: 'Steppe-ExtraBold','sans-serif';
+    font-size: 30px;
     margin: 0 0 9px 0;
 }
-.section-about-block-title-description{
+
+.section-about-block-title-description {
     font-size: 12px;
     margin: 0;
     text-align: left;
@@ -74,3 +92,63 @@ li:last-child {
     cursor: pointer;
 }
 
+.section-description {
+    margin-bottom: 20px;
+}
+
+.section-description-icon-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description-icon-box img {
+    padding-right: 76px;
+}
+
+.section-description-icon-box img:last-child {
+    padding-right: 0;
+}
+
+.section-description-text-box-title {
+    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-size: 96px;
+    text-align: center;
+}
+
+.red {
+    color: #F15B40
+}
+
+.section-description-text-box-text {
+    font-size: 18px;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section-map-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.section-map {
+    margin-bottom: 20px;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #999999;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 80px;
+}
