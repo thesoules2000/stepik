@@ -12,9 +12,19 @@
     src: url("../fonts/Steppe-ExtraBold.ttf");
 }
 
+@font-face {
+    font-family: 'Philosopher';
+    src: url("../fonts/Philosopher-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
 body {
     background-color: #FFE2B0;
-    font-family: 'Steppe-Book', sans-serif;
+    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .header {
@@ -27,7 +37,7 @@ h1 {
 }
 
 .nav-items {
-    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-family: 'Philosopher-Regular', 'sans-serif';
     list-style: none;
     text-align: center;
     gap: 100px;
@@ -46,7 +56,7 @@ li {
 .section-about {
     height: 640px;
     position: relative;
-    background: url(../images/01-Картинка-фона.jpg) center/cover no-repeat;
+    background: url(../images/01-bgimage.jpg) center/cover no-repeat;
     margin-bottom: 20px;
 }
 
@@ -70,7 +80,7 @@ li {
 }
 
 .section-about-block-title-text {
-    font-family: 'Steppe-ExtraBold','sans-serif';
+    font-family: 'Philosopher-Regular','sans-serif';
     font-size: 30px;
     margin: 0 0 9px 0;
 }
@@ -110,7 +120,7 @@ li:last-child {
 }
 
 .section-description-text-box-title {
-    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-family: 'Philosopher-Regular', 'sans-serif';
     font-size: 96px;
     text-align: center;
 }
@@ -145,8 +155,7 @@ iframe {
     border: none;
     border-top: 1px solid #999999;
     width: 1024px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 footer{
